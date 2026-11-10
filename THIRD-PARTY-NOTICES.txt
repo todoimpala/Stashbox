@@ -1,0 +1,54 @@
+Stashbox - third-party software notices
+=======================================
+
+Stashbox installs and runs the separate programs below. They are not part of Stashbox, are not
+modified, and are used under their own licences. Where a licence requires it, the source code is
+available from the upstream project listed here.
+
+Programs that run alongside Stashbox
+------------------------------------
+Whisparr (Eros)         3.6.6-develop.1913   GPL-3.0        https://github.com/Whisparr/Whisparr-Eros
+Prowlarr                2.7.0.5723           GPL-3.0        https://github.com/Prowlarr/Prowlarr
+Transmission (daemon)   4.1.4                GPL-2.0-or-later / GPL-3.0, with MIT-licensed parts
+                                                            https://transmissionbt.com
+FFmpeg                  latest static build  LGPL-2.1+ / GPL-2+ (depending on the build)
+                                                            https://ffmpeg.org
+                        Windows build by BtbN (https://github.com/BtbN/FFmpeg-Builds); Mac build from
+                        https://ffmpeg.martin-riedl.de. Downloaded when Stashbox first starts.
+Node.js                 20.18.0              MIT            https://nodejs.org
+                        Runs the Stashbox web interface; included in the installers.
+
+Whisparr, Prowlarr and FFmpeg are downloaded from their publishers the first time Stashbox starts.
+Transmission and Node.js are included in the installers.
+
+Libraries included with Transmission
+------------------------------------
+libcurl                 curl licence (MIT-style)        https://curl.se
+OpenSSL 3               Apache-2.0                      https://www.openssl.org
+zlib                    zlib licence                    https://zlib.net
+libevent                BSD-3-Clause                    https://libevent.org        (Mac)
+miniupnpc               BSD-3-Clause                    https://miniupnp.tuxfamily.org (Mac)
+libpsl                  MIT                             https://github.com/rockdaemon/libpsl (Mac)
+D-Bus client library    AFL-2.1 or GPL-2.0-or-later     https://www.freedesktop.org/wiki/Software/dbus (Windows)
+
+Microsoft Visual C++ Runtime (Windows)
+--------------------------------------
+msvcp140.dll, vcruntime140.dll and vcruntime140_1.dll are redistributed unmodified from the Microsoft
+Visual C++ Redistributable, under Microsoft's redistribution terms for those files.
+
+Stashbox itself is built with
+-----------------------------
+Go standard library and modernc.org/sqlite   BSD-3-Clause
+Next.js, React, Radix UI, lucide-react, Tailwind CSS, hls.js and related packages
+                                              MIT, Apache-2.0, ISC and BSD licences
+Manrope, Inter and Geist Mono fonts           SIL Open Font Licence 1.1
+NSIS (builds the Windows installer)           zlib/libpng-style licence
+
+StashDB (https://stashdb.org) and The Movie Database (https://www.themoviedb.org) are separate services
+with their own terms. Stashbox is not endorsed or certified by TMDB. Metadata and images come from those
+services and belong to their contributors and owners.
+
+Source code of the GPL programs
+-------------------------------
+You can obtain the source code of Whisparr, Prowlarr, Transmission and FFmpeg from the links above. The
+versions installed by Stashbox are the ones named in this file.
